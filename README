@@ -12,7 +12,7 @@ Client: N/A
 Server: N/A
 ________________________________________________
 
-REQUIRES: MODLOADER, MinecraftForge.
+REQUIRES: MODLOADER, MINECRAFTFORGE.
 
 
 
