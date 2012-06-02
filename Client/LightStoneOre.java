@@ -4,10 +4,10 @@ import java.util.Random;
 
 import net.minecraft.src.forge.*;
 
-public class ore1 extends Block implements ITextureProvider
+public class LightStoneOre extends Block implements ITextureProvider
 {
 	
-	public ore1(int i, int j)
+	public LightStoneOre(int i, int j)
 	{
 		super(i, j, Material.ground);
 	}
@@ -17,7 +17,7 @@ public class ore1 extends Block implements ITextureProvider
     }
 	public int idDropped(int i, Random random, int j)
 	{
-		return mod_amod.Item1.shiftedIndex;
+		return mod_amod.LightStoneBall.shiftedIndex;
 	}
 	public int quantityDropped(Random random)
 	{

@@ -4,11 +4,11 @@ import java.util.Random;
 
 import net.minecraft.src.forge.*;
 
-public class Item1 extends Item implements ITextureProvider
+public class LightStoneBall extends Item implements ITextureProvider
 {
 	
 	
-	public Item1 (int i)
+	public LightStoneBall (int i)
 	{
 		super(i);
 		maxStackSize = 64;
