@@ -11,6 +11,11 @@ public class mod_amod extends BaseMod
 		.setResistance(6000.0F)
 		.setLightValue(1.0F)
 		.setBlockName("LightStoneOre");
+	public static final Block DarkStoneOre = new DarkStoneOre(254, 1)
+		.setHardness(2.0f)
+		.setResistance(6000.0F)
+		.setLightValue(0.0F)
+		.setBlockName("DarkStoneOre");
 	public static final Item LightStoneBall = new Item(387)
 		.setItemName("LightStoneBall")
 		.setIconIndex(0);
@@ -18,10 +23,12 @@ public class mod_amod extends BaseMod
 	public mod_amod()
 	{
 		MinecraftForgeClient.preloadTexture("/imgz/terrain.png");
-        	MinecraftForgeClient.preloadTexture("/imgz/items.png");
+        MinecraftForgeClient.preloadTexture("/imgz/items.png");
 		ModLoader.registerBlock(LightStoneOre);
+		ModLoader.registerBlock(DarkStoneOre);
 	    	ModLoader.addName(LightStoneBall, "LightStone Ball");
 	    	ModLoader.addName(LightStoneOre, "LightStone Ore");
+	    	ModLoader.addName(DarkStoneOre, "DarkStone Ore");
 	
 	}
 	
@@ -38,14 +45,10 @@ public class mod_amod extends BaseMod
         	}
     	}
 	
-	public String Version()
-	{
-		return "0.0.2";
-	}
 	@Override
 	public String getVersion()
 	{
-		return "0.0.2";
+		return "Pre-Alpha b1";
 	}
 	@Override
 	public void load() {}

@@ -16,7 +16,7 @@ public class LightStoneBall extends Item implements ITextureProvider
 	
     public String getTextureFile()
     {
-            return "/imgz/terrain.png";
+            return "/imgz/items.png";
     }
 
 }
